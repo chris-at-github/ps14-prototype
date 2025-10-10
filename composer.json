@@ -1,0 +1,35 @@
+{
+	"name": "ps14/ps14_prototype",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 extension for rendering fluid prototype templates",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"prototype",
+		"fluid"
+	],
+	"homepage": "https://www.ps14.de/",
+	"require": {
+		"typo3/cms-core": "^12.4 || ^13.4"
+	},
+	"suggest": {
+	},
+	"autoload": {
+		"psr-4": {
+			"Ps14\\Ps14Prototype\\": "Classes"
+		}
+	},
+	"license": "closed",
+	"authors": [
+		{
+			"name": "Christian Pschorr",
+			"email": "pschorr.christian@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ps14_prototype"
+		}
+	}
+}

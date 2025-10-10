@@ -1,0 +1,45 @@
+// ---------------------------------------------------------------------------------------------------------------------
+// tt_content Definition
+tt_content {
+	ps14_prototype =< lib.contentElement
+	ps14_prototype {
+		templateName = Prototype.html
+		layoutRootPaths {
+			10 = EXT:ps14_prototype/Resources/Private/Layouts/
+		}
+
+		templateRootPaths {
+			10 = EXT:ps14_prototype/Resources/Private/Templates/
+		}
+
+		partialRootPaths {
+			10 = EXT:ps14_prototype/Resources/Private/Partials/
+		}
+
+		dataProcessing {
+			7070 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			7070 {
+				if.isTrue.field = tx_ps14_prototype_template
+
+				as = templates
+				references.fieldName = tx_ps14_prototype_template
+			}
+
+			7071 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			7071 {
+				if.isTrue.field = image
+
+				as = images
+				references.fieldName = image
+			}
+
+			7072 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			7072 {
+				if.isTrue.field = media
+
+				as = files
+				references.fieldName = media
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+#mod.wizards.newContentElement.wizardItems {
+#	special {
+#		elements {
+#			datamints_prototype {
+#				iconIdentifier = datamints-prototype-module
+#				title = LLL:EXT:datamints_prototype/Resources/Private/Language/locallang_tca.xlf:title
+#				description = LLL:EXT:datamints_prototype/Resources/Private/Language/locallang_tca.xlf:description
+#				tt_content_defValues {
+#					CType = datamints_prototype
+#				}
+#			}
+#		}
+#
+#		show := addToList(datamints_prototype)
+#	}
+#}

@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Ps14\Ps14Prototype\ViewHelpers\Render\TemplateViewHelper:
+    public: true
+
+  Ps14\Ps14Prototype\:
+    resource: '../Classes/*'

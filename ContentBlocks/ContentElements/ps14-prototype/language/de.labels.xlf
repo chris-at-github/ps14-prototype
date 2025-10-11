@@ -1,0 +1,59 @@
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" target-language="de" date="2025-09-17T14:03:25+00:00" product-name="datamints/datamints-prototype">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<target>Prototyp</target>
+			</trans-unit>
+			<trans-unit id="description">
+				<target>Rendert HTML Prototype Dateien auf Basis von Fluid Templates</target>
+			</trans-unit>
+
+			<trans-unit id="crop_variant.default.label">
+				<target>Default</target>
+			</trans-unit>
+			<trans-unit id="crop_variant.mobile.label">
+				<target>Mobil</target>
+			</trans-unit>
+			<trans-unit id="crop_variant.desktop.label">
+				<target>Desktop</target>
+			</trans-unit>
+
+			<trans-unit id="tabs.tab_text">
+				<target>Text</target>
+			</trans-unit>
+			<trans-unit id="tabs.tab_relations">
+				<target>Verknüpfungen</target>
+			</trans-unit>
+
+			<trans-unit id="template.label">
+				<target>HTML Template</target>
+			</trans-unit>
+			<trans-unit id="files.label">
+				<target>Dateien</target>
+			</trans-unit>
+			<trans-unit id="records.label">
+				<target>Datensätze</target>
+			</trans-unit>
+
+			<trans-unit id="records.tabs.tab_relations">
+				<target>Verknüpfungen</target>
+			</trans-unit>
+			<trans-unit id="records.tabs.tab_categories">
+				<target>Kategorien</target>
+			</trans-unit>
+			<trans-unit id="records.title.label">
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="records.description.label">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="records.media.label">
+				<target>Medien</target>
+			</trans-unit>
+			<trans-unit id="records.categories.label">
+				<target>Kategorien</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

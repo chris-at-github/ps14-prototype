@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ps14\Prototype\ViewHelpers\Render;
+namespace Ps14\Ps14Prototype\ViewHelpers\Render;
 
 /***************************************************************
  *  Copyright notice

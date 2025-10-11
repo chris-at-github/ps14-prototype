@@ -10,7 +10,8 @@
 	],
 	"homepage": "https://www.ps14.de/",
 	"require": {
-		"typo3/cms-core": "^12.4 || ^13.4"
+		"typo3/cms-core": "^13.4",
+		"friendsoftypo3/content-blocks": "^1.0"
 	},
 	"suggest": {
 	},

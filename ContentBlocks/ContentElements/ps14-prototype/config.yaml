@@ -1,0 +1,147 @@
+name: ps14/ps14-prototype
+vendorPrefix: tx
+group: special
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+  - TYPO3/Categories
+fields:
+  - identifier: TYPO3/Header
+    type: Basic
+
+  - identifier: template
+    type: File
+
+  - identifier: tab_text
+    type: Tab
+
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+
+  - identifier: tab_relations
+    type: Tab
+
+  - identifier: image
+    useExistingField: true
+    cropVariants:
+      default:
+        title: 'LLL:EXT:ps14_prototype/ContentBlocks/ContentElements/ps14-prototype/language/labels.xlf:crop_variant.default.label'
+        allowedAspectRatios:
+          R11:
+            title: 1:1
+            value: 1
+          R43:
+            title: 4:3
+            value: 4 / 3
+          R169:
+            title: 16:9
+            value: 16 / 9
+          RNaN:
+            title: NaN
+            value: 0
+      desktop:
+        title: 'LLL:EXT:ps14_prototype/ContentBlocks/ContentElements/ps14-prototype/language/labels.xlf:crop_variant.desktop.label'
+        allowedAspectRatios:
+          R11:
+            title: 1:1
+            value: 1
+          R43:
+            title: 4:3
+            value: 4 / 3
+          R169:
+            title: 16:9
+            value: 16 / 9
+          RNaN:
+            title: NaN
+            value: 0
+      mobile:
+        title: 'LLL:EXT:ps14_prototype/ContentBlocks/ContentElements/ps14-prototype/language/labels.xlf:crop_variant.mobile.label'
+        allowedAspectRatios:
+          R11:
+            title: 1:1
+            value: 1
+          R43:
+            title: 4:3
+            value: 4 / 3
+          R169:
+            title: 16:9
+            value: 16 / 9
+          RNaN:
+            title: NaN
+            value: 0
+
+  - identifier: files
+    type: File
+
+  - identifier: records
+    type: Collection
+    labelField: title
+    fields:
+      - identifier: title
+        type: Text
+
+      - identifier: description
+        type: Textarea
+        enableRichtext: true
+
+      - identifier: tab_relations
+        type: Tab
+
+      - identifier: media
+        type: File
+        allowed: common-media-types
+        cropVariants:
+          default:
+            title: 'LLL:EXT:ps14_prototype/ContentBlocks/ContentElements/ps14-prototype/language/labels.xlf:crop_variant.default.label'
+            allowedAspectRatios:
+              R11:
+                title: 1:1
+                value: 1
+              R43:
+                title: 4:3
+                value: 4 / 3
+              R169:
+                title: 16:9
+                value: 16 / 9
+              RNaN:
+                title: NaN
+                value: 0
+          desktop:
+            title: 'LLL:EXT:ps14_prototype/ContentBlocks/ContentElements/ps14-prototype/language/labels.xlf:crop_variant.desktop.label'
+            allowedAspectRatios:
+              R11:
+                title: 1:1
+                value: 1
+              R43:
+                title: 4:3
+                value: 4 / 3
+              R169:
+                title: 16:9
+                value: 16 / 9
+              RNaN:
+                title: NaN
+                value: 0
+          mobile:
+            title: 'LLL:EXT:ps14_prototype/ContentBlocks/ContentElements/ps14-prototype/language/labels.xlf:crop_variant.mobile.label'
+            allowedAspectRatios:
+              R11:
+                title: 1:1
+                value: 1
+              R43:
+                title: 4:3
+                value: 4 / 3
+              R169:
+                title: 16:9
+                value: 16 / 9
+              RNaN:
+                title: NaN
+                value: 0
+
+      - identifier: tab_categories
+        type: Tab
+
+      - identifier: categories
+        type: Category

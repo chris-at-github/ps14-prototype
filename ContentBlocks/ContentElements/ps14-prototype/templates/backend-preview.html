@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true">
+<f:layout name="Preview"/>
+
+<f:section name="Header">
+    <cb:link.editRecord uid="{data.uid}" table="{data.mainType}">
+        <div><strong>{data.header}</strong></div>
+    </cb:link.editRecord>
+</f:section>
+
+<f:section name="Content">
+    <cb:link.editRecord uid="{data.uid}" table="{data.mainType}">
+        <f:for each="{data.template}" as="template">
+            <div>Template: {template.name}</div>
+        </f:for>
+    </cb:link.editRecord>
+</f:section>
+</html>

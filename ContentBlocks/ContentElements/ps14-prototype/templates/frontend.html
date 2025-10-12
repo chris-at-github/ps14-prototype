@@ -1,5 +1,10 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:pro="http://typo3.org/ns/Ps14/Ps14Prototype/ViewHelpers" data-namespace-typo3-fluid="true">
-	<f:for each="{data.template}" as="template">
-		<pro:render.template template="{template}" variables="{_all}" />
-	</f:for>
+	<f:layout name="ContentBlock" />
+
+	<f:section name="Header"/>
+	<f:section name="Main">
+		<f:for each="{data.template}" as="template">
+			<pro:render.template template="{template}" variables="{_all}" />
+		</f:for>
+	</f:section>
 </html>

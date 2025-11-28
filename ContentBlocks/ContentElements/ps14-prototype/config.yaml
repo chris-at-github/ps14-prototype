@@ -14,10 +14,6 @@ fields:
   - identifier: template
     type: File
 
-  - identifier: css_class
-    type: Text
-    size: 50
-
   - identifier: tab_text
     type: Tab
 

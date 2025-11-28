@@ -3,7 +3,7 @@
 	<f:if condition="{data.tx_foundation_no_frame} == 0">
 		<f:then>
 
-			<div id="c{data.uid}" class="container container--outer container--layout-{data.layout} container--text-layout-{data.tx_foundation_text_layout} hue-container hue-container--{data.frame_class} container--variant-{data.tx_foundation_variant} {data.frame_classes} container--space-before-{data.space_before_class} container--space-after-{data.space_after_class}" {data.additional_attributes -> f:format.raw()}>
+			<div id="c{data.uid}" class="container container--outer container--layout-{data.layout} container--variant-{data.tx_foundation_variant} container--space-before-{data.space_before_class} container--space-after-{data.space_after_class}"}>
 				<div class="container__inner">
 					<f:render section="Before" optional="true">
 						<f:render partial="DropIn/Before/All" arguments="{_all}" />

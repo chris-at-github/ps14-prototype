@@ -29,6 +29,9 @@
 			<trans-unit id="template.label">
 				<target>HTML Template</target>
 			</trans-unit>
+			<trans-unit id="css_class.label">
+				<target>CSS-Klasse</target>
+			</trans-unit>
 			<trans-unit id="files.label">
 				<target>Dateien</target>
 			</trans-unit>

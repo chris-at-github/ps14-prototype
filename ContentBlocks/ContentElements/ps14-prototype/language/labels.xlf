@@ -30,6 +30,9 @@
 			<trans-unit id="template.label">
 				<source>HTML Template</source>
 			</trans-unit>
+			<trans-unit id="css_class.label">
+				<source>CSS Class</source>
+			</trans-unit>
 			<trans-unit id="files.label">
 				<source>Files</source>
 			</trans-unit>

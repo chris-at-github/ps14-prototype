@@ -1,35 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers" data-namespace-typo3-fluid="true">
 <fo:format.html>
-	<f:if condition="{data.tx_foundation_no_frame} == 0">
-		<f:then>
-			<f:render section="Before" optional="true">
-				<f:render partial="DropIn/Before/All" arguments="{_all}" />
-			</f:render>
-			<f:render section="Header" optional="true">
-				<f:render partial="Header/All" arguments="{_all}" />
-			</f:render>
-			<f:render section="Main" optional="true" />
-			<f:render section="Readmore" optional="true">
-				<f:render partial="Content/Readmore" section="Main" arguments="{_all}" />
-			</f:render>
-			<f:render section="Footer" optional="true">
-				<f:render partial="Footer/All" arguments="{_all}" />
-			</f:render>
-			<f:render section="After" optional="true">
-				<f:render partial="DropIn/After/All" arguments="{_all}" />
-			</f:render>
-		</f:then>
-		<f:else>
-
-			<f:render section="Header" optional="true">
-				<f:render partial="Header/All" arguments="{_all}" />
-			</f:render>
-			<f:render section="Main" optional="true" />
-			<f:render section="Footer" optional="true">
-				<f:render partial="Footer/All" arguments="{_all}" />
-			</f:render>
-			
-		</f:else>
-	</f:if>
+	<f:render section="Header" optional="true">
+		<f:render partial="Header/All" arguments="{_all}" />
+	</f:render>
+	<f:render section="Main" optional="true" />
 </fo:format.html>
 </html>
